@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://social-media-sepia-six.vercel.app/',
   optionsSuccessStatus: 200 
 }
 
