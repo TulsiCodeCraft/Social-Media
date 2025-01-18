@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 const corsOptions = {
-  origin: 'https://social-media-sepia-six.vercel.app/',
+  origin: 'https://social-media-three-hazel.vercel.app',
   optionsSuccessStatus: 200 
 }
 
