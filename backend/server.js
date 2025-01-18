@@ -10,6 +10,10 @@ import dotenv from 'dotenv'
 dotenv.config()
 const app = express()
 
+app.get('/', (req, res) => {
+  res.send('Server is running!');
+});
+
 const corsOptions = {
   origin: 'http://localhost:5173',
   optionsSuccessStatus: 200 
