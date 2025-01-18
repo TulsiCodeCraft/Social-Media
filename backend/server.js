@@ -15,9 +15,11 @@ app.get('/', (req, res) => {
 });
 
 const corsOptions = {
-  origin: 'https://social-media-three-hazel.vercel.app',
-  optionsSuccessStatus: 200 
-}
+  origin: ['https://social-media-three-hazel.vercel.app'], // Add your frontend URL here
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow required headers
+  credentials: true, // Allow cookies and credentials
+};
 
 app.use(cors(corsOptions))
 app.use(express.json())
